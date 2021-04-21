@@ -13,15 +13,12 @@
 Welcome to the index!
 
 Go to <a href="about">about</a>
-
-<form method="POST" action="/upload-image" enctype="multipart/form-data">
-    <div>
-        <label>Select the image you want to upload:</label>
-        <input type="file" name="profile_pic" />
-    </div>
-    <div>
-        <input type="submit" name="btn_upload_profile_pic" value="Upload" />
-    </div>
+<br>
+<br>
+Upload an image
+<form method="post" enctype="multipart/form-data" action="/upload">
+    <input type="file" name="file">
+    <input type="submit" value="Submit">
 </form>
 
 </body>
