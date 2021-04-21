@@ -10,6 +10,8 @@ const app = express();
 
 app.use(cors());
 
+app.set('view engine', 'hbs');
+
 app.use("/users", userRoute);
 app.use("/index", html_index);
 app.use("/about", html_about);
