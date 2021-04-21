@@ -22,7 +22,7 @@ const storage = new MulterGridfsStorage({
 });
 
 // New image.
-router.post("/upload-image", (req, res) => {
+router.post("/upload", (req, res) => {
     let upload = multer({})
 
     user.create({
