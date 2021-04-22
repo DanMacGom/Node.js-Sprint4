@@ -1,5 +1,13 @@
 const express = require("express");
+const dotenv = require("dotenv/config");
 const cors = require("cors");
+
+const mongoose = require("mongoose");
+
+mongoose.connect(
+    `mongodb://${process.env.MONGODB_HOST}:${process.env.MONGODB_PORT}/${process.env.USERS_COLLECTION}`, 
+    { useNewUrlParser: true, useUnifiedTopology: true }
+);
 
 const userRoute = require("./src/routes/users");
 const html_index = require("./src/routes/index_html");

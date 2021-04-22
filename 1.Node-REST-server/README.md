@@ -1,4 +1,6 @@
-# Usage in Linux.
+# Usage
+There is a .env_example file in the root folder with the skeleton of the variables you need to fill with your own. Copy it and create a new .env in the root and fill with your values. <br>
+
 Open a terminal and navigate to the project folder.<br>
 - `mongod` (start mongodb daemon, mongodb starts listening)<br>
 

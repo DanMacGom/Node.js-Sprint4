@@ -33,7 +33,7 @@ router.get("/:id", (req, res) => {
             return res.status(404).send("No user found.");
         }
 
-        req.body.url = req.hostname + `:${process.env.PORT}`+ req.baseUrl + req.path;
+        req.body.url = req.hostname + `:${process.env.APP_PORT}`+ req.baseUrl + req.path;
         res.status(200).send(req.body);
     });
 });
