@@ -1,5 +1,5 @@
+require("./mongoDB");
 const mongoose = require("mongoose");
-const conmongo = require("./mongoDB");
 
 const playerGamesSchema = new mongoose.Schema({
     playerName: { type: String, unique: true },
