@@ -18,7 +18,7 @@ const app = express();
 
 app.use(cors());
 
-app.set('view engine', 'hbs');
+// app.set('view engine', 'hbs');
 
 app.use("/", html_index);
 app.use("/user", userRoute);
