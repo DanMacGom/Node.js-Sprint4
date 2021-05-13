@@ -20,8 +20,8 @@ app.use(cors());
 
 app.set('view engine', 'hbs');
 
+app.use("/", html_index);
 app.use("/user", userRoute);
-app.use("/index", html_index);
 app.use("/about", html_about);
 app.use("/upload", uploadRoute);
 
