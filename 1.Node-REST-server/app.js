@@ -5,7 +5,7 @@ const cors = require("cors");
 const mongoose = require("mongoose");
 
 mongoose.connect(
-    `mongodb://${process.env.MONGODB_HOST}:${process.env.MONGODB_PORT}/${process.env.USERS_COLLECTION}`, 
+    `mongodb://${process.env.MONGODB_HOST}:${process.env.MONGODB_PORT}/usersCollection`, 
     { useNewUrlParser: true, useUnifiedTopology: true }
 );
 
@@ -20,7 +20,7 @@ app.use(cors());
 
 app.set('view engine', 'hbs');
 
-app.use("/users", userRoute);
+app.use("/user", userRoute);
 app.use("/index", html_index);
 app.use("/about", html_about);
 app.use("/upload", uploadRoute);
