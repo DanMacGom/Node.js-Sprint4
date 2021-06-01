@@ -1,6 +1,7 @@
 const express = require("express");
 const dotenv = require("dotenv/config");
 const cors = require("cors");
+const fileupload = require("express-fileupload");
 
 const mongoose = require("mongoose");
 
@@ -17,6 +18,7 @@ const uploadRoute = require("./src/routes/upload");
 const app = express();
 
 app.use(cors());
+app.use(fileupload());
 
 // app.set('view engine', 'hbs');
 
