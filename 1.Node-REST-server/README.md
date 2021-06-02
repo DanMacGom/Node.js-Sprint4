@@ -16,3 +16,6 @@ Copy the user id from the response.
 ![Response id](photos/response-id.png)<br>
 Make a get by using the id in the url.<br>
 ![Get user by id](photos/get-user-by-id.png)
+# Upload image
+To upload image set Key as "photo" and change the value from text to file.
+![Upload Image](photos/image-upload.png)
