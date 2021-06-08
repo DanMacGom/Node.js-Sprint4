@@ -7,7 +7,7 @@ function emptyContent(req, res) {
         });
 
         return true;
-    } 
+    }
     
     if (req.body.playerName === undefined) {
         res.status(400).send({

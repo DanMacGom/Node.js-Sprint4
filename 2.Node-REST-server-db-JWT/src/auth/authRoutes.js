@@ -19,7 +19,7 @@ authRouter.post("/", (req, res) => {
         
         res.json({ accessToken });
     } else {
-        res.send({ message: "Username or password incorrect" });
+        res.send({ message: "Username or password incorrect."});
     }
 });
 
